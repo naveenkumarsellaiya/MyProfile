@@ -1,15 +1,37 @@
 {
   "files": {
-    "main.css": "/MyProfile/static/css/main.32718cc7.css",
-    "main.js": "/MyProfile/static/js/main.2a366a56.js",
-    "static/js/488.e87e3114.chunk.js": "/MyProfile/static/js/488.e87e3114.chunk.js",
-    "index.html": "/MyProfile/index.html",
-    "main.32718cc7.css.map": "/MyProfile/static/css/main.32718cc7.css.map",
-    "main.2a366a56.js.map": "/MyProfile/static/js/main.2a366a56.js.map",
-    "488.e87e3114.chunk.js.map": "/MyProfile/static/js/488.e87e3114.chunk.js.map"
+    "main.css": "/naveenkumarsellaiya/MyProfile/static/css/main.a3c01734.css",
+    "main.js": "/naveenkumarsellaiya/MyProfile/static/js/main.b822400b.js",
+    "static/js/488.ac2c6074.chunk.js": "/naveenkumarsellaiya/MyProfile/static/js/488.ac2c6074.chunk.js",
+    "static/media/call.jpg": "/naveenkumarsellaiya/MyProfile/static/media/call.3c173e0bf5ddd055e90b.jpg",
+    "static/media/pic.png": "/naveenkumarsellaiya/MyProfile/static/media/pic.ecc374261a3dca50d15f.png",
+    "static/media/java.png": "/naveenkumarsellaiya/MyProfile/static/media/java.b9abbe0ad3c7cf264071.png",
+    "static/media/pic2.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/pic2.70833bfb872af134d230.jpeg",
+    "static/media/school.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/school.59b1254ef7c40417f7e9.jpeg",
+    "static/media/sql.png": "/naveenkumarsellaiya/MyProfile/static/media/sql.04ef120f04706a8a2b1c.png",
+    "static/media/type.png": "/naveenkumarsellaiya/MyProfile/static/media/type.23735f1edf0d3ca86056.png",
+    "static/media/travel.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/travel.dec4b35daaa66abd872a.jpeg",
+    "static/media/github.png": "/naveenkumarsellaiya/MyProfile/static/media/github.cd18fd82b07e07fdf740.png",
+    "static/media/clock.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/clock.398f5e76543fea7fa433.jpeg",
+    "static/media/hotel.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/hotel.b853807c3dfd9e521498.jpeg",
+    "static/media/css.png": "/naveenkumarsellaiya/MyProfile/static/media/css.1ff4abc4a200857e30ef.png",
+    "static/media/react.png": "/naveenkumarsellaiya/MyProfile/static/media/react.569b904686c2ed817d48.png",
+    "static/media/js.png": "/naveenkumarsellaiya/MyProfile/static/media/js.cf28cdda5292f8fe0c09.png",
+    "static/media/weather.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/weather.63b1b1a7411b18fa4238.jpeg",
+    "static/media/Ns.png": "/naveenkumarsellaiya/MyProfile/static/media/Ns.a000fb3d88a07e5d72f6.png",
+    "static/media/notpad.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/notpad.628a4ea57f7eceadb0fe.jpeg",
+    "static/media/tailwind.png": "/naveenkumarsellaiya/MyProfile/static/media/tailwind.14d437cf882f807bd027.png",
+    "static/media/w3.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/w3.f89dd6ce81e2236d501a.jpeg",
+    "static/media/vs code.png": "/naveenkumarsellaiya/MyProfile/static/media/vs code.85ae6abd50cace5c5968.png",
+    "static/media/imayam.jpeg": "/naveenkumarsellaiya/MyProfile/static/media/imayam.bf7bd87934c8c2c1c18b.jpeg",
+    "static/media/soon.webp": "/naveenkumarsellaiya/MyProfile/static/media/soon.b0e19f62290e72e0473b.webp",
+    "index.html": "/naveenkumarsellaiya/MyProfile/index.html",
+    "main.a3c01734.css.map": "/naveenkumarsellaiya/MyProfile/static/css/main.a3c01734.css.map",
+    "main.b822400b.js.map": "/naveenkumarsellaiya/MyProfile/static/js/main.b822400b.js.map",
+    "488.ac2c6074.chunk.js.map": "/naveenkumarsellaiya/MyProfile/static/js/488.ac2c6074.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32718cc7.css",
-    "static/js/main.2a366a56.js"
+    "static/css/main.a3c01734.css",
+    "static/js/main.b822400b.js"
   ]
 }
