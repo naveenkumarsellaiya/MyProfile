@@ -1,16 +1,15 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import React from "react";
+import "./App.css";
+import { BrowserRouter} from "react-router-dom";
 
-// Import components
-import Navbar from './Components/Navbar';
-import Footer from './Components/footer';
-import Home from './Components/main';
-import About from './Components/About';
-import Contact from './Components/Contact';
-import Skills from './Components/Skills';
-import Education from './Components/Education';
-import Project from './Components/Project';
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/footer";
+import Home from "./Components/main";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Skills from "./Components/Skills";
+import Education from "./Components/Education";
+import Project from "./Components/Project";
 
 function App() {
   return (
@@ -37,11 +36,9 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
-
-      {/* Footer persists across all pages */}
+      <div id="footer">
       <Footer />
-     
-      
+      </div>
     </BrowserRouter>
   );
 }

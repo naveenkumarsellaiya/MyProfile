@@ -1,104 +1,58 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineAdsClick } from "react-icons/md";
-import { FaHeart } from "react-icons/fa"; // Heart icon
+import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   const [likeCount, setLikeCount] = useState(0);
 
-  // Load like count from local storage on component mount
+  // Load likes from local storage when component mounts
   useEffect(() => {
     const storedLikes = localStorage.getItem("likeCount");
-    if (storedLikes) {
-      setLikeCount(parseInt(storedLikes, 10));
-    }
+    if (storedLikes) setLikeCount(parseInt(storedLikes, 10));
   }, []);
 
-  // Save like count to local storage whenever it changes
+  // Handle like button click
   const handleLike = () => {
-    const updatedLikes = likeCount + 1;
-    setLikeCount(updatedLikes);
-    localStorage.setItem("likeCount", updatedLikes);
+    setLikeCount((prev) => {
+      const updatedLikes = prev + 1;
+      localStorage.setItem("likeCount", updatedLikes); // Update local storage
+      return updatedLikes;
+    });
   };
 
   return (
     <footer className="bg-indigo-950 w-full h-auto p-6 text-white font-semibold">
-      <div className="flex flex-col md:flex-row justify-evenly items-start md:flex-wrap ml-10">
+      <div className="flex flex-col md:flex-row justify-evenly items-start flex-wrap ml-10">
         {/* Branding Section */}
-        <div className="mb-6 md:mb-0" data-aos="flip-up" data-aos-delay="200">
-          <h2 className="text-xl mb-2">Naveenkumar Portfolio</h2>
-          <p className="text-md">
-            Thank you for visiting my personal portfolio website.
-          </p>
-        </div>
+        <SectionHeading title="Naveenkumar Portfolio" aos="flip-up">
+          <p>Thank you for visiting my personal portfolio website.</p>
+        </SectionHeading>
 
         {/* Quick Links Section */}
-        <nav className="mb-6 md:mb-0" data-aos="slide-up" data-aos-delay="100">
-          <h2 className="text-xl mb-2">Quick Access</h2>
+        <SectionHeading title="Quick Access" aos="slide-up">
           <ul className="space-y-2 text-sm">
-            <li>
-              <Link
-                to="/"
-                className="hover:underline hover:text-blue-300 transition-colors flex items-center gap-1"
-              >
-                <MdOutlineAdsClick />
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className="hover:underline hover:text-blue-300 transition-colors flex items-center gap-1"
-              >
-                <MdOutlineAdsClick />
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/education"
-                className="hover:underline hover:text-blue-300 transition-colors flex items-center gap-1"
-              >
-                <MdOutlineAdsClick />
-                Education
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/skills"
-                className="hover:underline hover:text-blue-300 transition-colors flex items-center gap-1"
-              >
-                <MdOutlineAdsClick />
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/projects"
-                className="hover:underline hover:text-blue-300 transition-colors flex items-center gap-1"
-              >
-                <MdOutlineAdsClick />
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="hover:underline hover:text-blue-300 transition-colors flex items-center gap-1"
-              >
-                <MdOutlineAdsClick />
-                Contact
-              </Link>
-            </li>
+            {["Home", "About", "Education", "Skills", "Projects", "Contact"].map(
+              (link, idx) => (
+                <li key={link}>
+                  <Link
+                    to={`/${link.toLowerCase()}`}
+                    className="flex items-center gap-1 hover:text-blue-300 hover:underline transition-colors"
+                  >
+                    <MdOutlineAdsClick />
+                    {link}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
-        </nav>
+        </SectionHeading>
 
         {/* Contact Details Section */}
-        <div aria-label="Contact Details" data-aos="fade-up" data-aos-delay="100">
-          <h2 className="text-xl mb-2">Contact Details</h2>
+        <SectionHeading title="Contact Details" aos="fade-up">
           <p>+91 XXX-XXX-XXXX</p>
           <p>Tamil Nadu, India</p>
-        </div>
+        </SectionHeading>
       </div>
 
       {/* Like Button Section */}
@@ -110,7 +64,7 @@ const Footer = () => {
           <button
             onClick={handleLike}
             className="text-red-500 hover:scale-110 transition-transform"
-            aria-label="Like Button"
+            aria-label="Like this portfolio"
           >
             <FaHeart size={24} />
           </button>
@@ -120,5 +74,13 @@ const Footer = () => {
     </footer>
   );
 };
+
+// Reusable Section Heading Component
+const SectionHeading = ({ title, children, aos }) => (
+  <div className="mb-6 md:mb-0" data-aos={aos} data-aos-delay="100">
+    <h2 className="text-xl mb-2">{title}</h2>
+    {children}
+  </div>
+);
 
 export default Footer;
