@@ -28,19 +28,19 @@ const projects = [
     pjtname: "Clock",
     img:pjt3,
     para: "A digital clock application using date in java Script functions related .",
-    codeLink: "https://github.com/yourusername/clock-app",
+    codeLink: "https://naveenkumarsellaiya.github.io/Multi-App/",
   },
   {
     pjtname: "Calculator",
     img: pjt4,
     para: "calculator for basic Arithmatic calculations.",
-    codeLink: "https://github.com/yourusername/calculator",
+    codeLink: "https://naveenkumarsellaiya.github.io/Multi-App/components/calculater/calculator.html",
   },
   {
     pjtname: "Notepad",
     img:pjt5,
     para: "A simple notepad app for writing, editing, and organizing notes.",
-    codeLink: "https://github.com/yourusername/notepad",
+    codeLink: "https://naveenkumarsellaiya.github.io/Multi-App/components/notes/notes.html",
   },
   {
     pjtname: "W3 School Home",

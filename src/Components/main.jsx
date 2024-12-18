@@ -28,7 +28,7 @@ function Main() {
 
   // Typing Animation Hook
   const [text] = useTypewriter({
-    words: ["React Developer...", "Frontend Developer...", "Web Developer..."],
+    words: ["React Developer...", "Frontend Developer..", "Web Developer..."],
     loop: true,
     typeSpeed: 50,
     deleteSpeed: 40,
@@ -39,8 +39,8 @@ function Main() {
   return (
     <div className="h-fit md:h-screen w-[100%] flex flex-col md:flex-row md:justify-evenly object-cover bg-violet-50 p-5 md:p-2">
       {/* Left Section */}
-      <div className="text-blue-900 md:mt-28 md:w-2/4 font-bold flex flex-col mt-4 ml-20 md:ml-0">
-        <h3 className="text-[50px] font-bold" data-aos="fade-left">
+      <div className="text-blue-900 md:mt-28 md:w-2/4 font-bold flex flex-col mt-4 ml-2 md:ml-0">
+        <h3 className="text-[40px] md:text-[50px] font-bold" data-aos="fade-left">
           Hi There, I'm
         </h3>
         <h2
@@ -48,13 +48,13 @@ function Main() {
           data-aos="zoom-out"
           data-aos-delay="200"
         >
-          <span className="text-orange-600 text-[45px] group-hover:text-indigo-500 cursor-pointer transition-colors">
+          <span className="text-orange-600  md:text-[45px] text-[30px] group-hover:text-indigo-500 cursor-pointer transition-colors">
             Naveenkumar{" "}
             <span className="text-orange-700 group-hover:text-indigo-500">S</span>
           </span>
         </h2>
 
-        <h2 className="text-2xl w-[90%] md:w-[400px]" data-aos="fade-right">
+        <h2 className="text-lg md:text-xl w-[90%] md:w-[400px]" data-aos="fade-right">
           I Am a{" "}
           <span className="font-bold text-md text-red-900">{text}</span>
           <Cursor />
@@ -72,7 +72,7 @@ function Main() {
           </a>
 
           {/* Social Links */}
-          <div className="font-bold flex w-full gap-6 mt-5">
+          <div className="font-bold flex w-full gap-3 md:gap-6 mt-5">
             {icons.map((item, index) => (
               <a
                 key={index}
