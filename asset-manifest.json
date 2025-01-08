@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/MyProfile/static/css/main.31f1b516.css",
-    "main.js": "/MyProfile/static/js/main.b07c6269.js",
+    "main.js": "/MyProfile/static/js/main.ec10ca49.js",
     "static/js/488.ac2c6074.chunk.js": "/MyProfile/static/js/488.ac2c6074.chunk.js",
     "static/media/call.jpg": "/MyProfile/static/media/call.3c173e0bf5ddd055e90b.jpg",
     "static/media/pic.png": "/MyProfile/static/media/pic.ecc374261a3dca50d15f.png",
+    "static/media/shooping.jpg": "/MyProfile/static/media/shooping.42b44797ca0d39f0a8d3.jpg",
     "static/media/java.png": "/MyProfile/static/media/java.b9abbe0ad3c7cf264071.png",
     "static/media/pic2.jpeg": "/MyProfile/static/media/pic2.70833bfb872af134d230.jpeg",
     "static/media/school.jpeg": "/MyProfile/static/media/school.59b1254ef7c40417f7e9.jpeg",
@@ -27,11 +28,11 @@
     "static/media/soon.webp": "/MyProfile/static/media/soon.b0e19f62290e72e0473b.webp",
     "index.html": "/MyProfile/index.html",
     "main.31f1b516.css.map": "/MyProfile/static/css/main.31f1b516.css.map",
-    "main.b07c6269.js.map": "/MyProfile/static/js/main.b07c6269.js.map",
+    "main.ec10ca49.js.map": "/MyProfile/static/js/main.ec10ca49.js.map",
     "488.ac2c6074.chunk.js.map": "/MyProfile/static/js/488.ac2c6074.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31f1b516.css",
-    "static/js/main.b07c6269.js"
+    "static/js/main.ec10ca49.js"
   ]
 }
